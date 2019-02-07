@@ -3,7 +3,7 @@ var Router = express.Router();
 var BodyParser = require('body-parser');
 var expressValidato = require('express-validator');
 var BodyParserMid = BodyParser.urlencoded();//middle ware to get data from request body
-var bcrypt = require('bcrypt');
+
 var mongoose = require("mongoose");
 var passwordHash = require('password-hash'); //for generatet hashed password and verifiy
 var jwt = require('jsonwebtoken');
