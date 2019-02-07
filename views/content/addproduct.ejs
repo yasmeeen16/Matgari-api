@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <form action="/product/addProduct/<%= category._id%>" method="post" enctype="multipart/form-data">
+      <input type="text" name="Ename" value="" placeholder="English name">
+      <input type="text" name="Aname" value="" placeholder="Arabic name">
+      <input type="text" name="brandArabic" value="" placeholder="brandArabic">
+      <input type="text" name="brandEnglish" value="" placeholder="brandEnglish">
+      <input type="text" name="modelnumber" value="" placeholder="modelnumber">
+      <input type="text" name="price1" value="" placeholder="price1">
+      <input type="text" name="price2" value="" placeholder="price2">
+      <input type="text" name="discount" value="" placeholder="discount">
+      <input type="text" name="discriptionEnglish" value="" placeholder="discriptionEnglish">
+      <input type="text" name="discriptionArabic" value="" placeholder="discriptionArabic">
+      <input type="text" name="tagsArabic" value="" placeholder="tagsArabic">
+      <input type="text" name="tagsEnglish" value="" placeholder="tagsEnglish">
+      <input type="text" name="freeshipping" value="" placeholder="freeshipping">
+      <input type="text" name="heighlightEnglish" value="" placeholder="heighlightEnglish">
+      <input type="text" name="heighlightArabic" value="" placeholder="heighlightArabic">
+      <input type="text" name="specificationEnglish" value="" placeholder="specificationEnglish">
+      <input type="text" name="specificationArabic" value="" placeholder="specificationArabic">
+      <input type="text" name="quantity" value="" placeholder="quantity">
+      <input type="text" name="status" value="" placeholder="status">
+
+
+        <input type="file" name="imgs" >
+        <input type="submit">
+    </form>
+  </body>
+</html>

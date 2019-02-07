@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+    </style>
+      </head>
+  <body>
+    <table>
+        <%categories.forEach(function(category){ %>
+      <tr>
+        <td><%= category.Ename  %></td>
+        <td><%= category.Aname  %></td>
+        <td><%= category.img %></td>
+        <td><%= category._id %></td>
+        <td> <a href="/subCategory/addsubCategory/<%= category._id %>">Addsub</a> </td>
+        <td> <a href="/subCategory/allsubCategory/<%= category._id %>">sub</a> </td>
+      </tr>
+      <%})%>
+    </table>
+  </body>
+</html>

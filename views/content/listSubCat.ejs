@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+    </style>
+      </head>
+  <body>
+    <table>
+        <%subcategories.forEach(function(subcategory){ %>
+      <tr>
+        <td><%= subcategory.Ename  %></td>
+        <td><%= subcategory.Aname  %></td>
+        <td><%= subcategory.img %></td>
+        <td><%= subcategory._id %></td>
+        <td> <a href="/product/addProduct/<%= subcategory._id %>" >add product</a> </td>
+        <td> <a href="">sub</a> </td>
+      </tr>
+      <%})%>
+    </table>
+  </body>
+</html>
